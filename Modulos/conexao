@@ -56,7 +56,7 @@ SCOLOR='\033[0m'
 			slowdns
 		} || {
 			cd $HOME
-			wget https://raw.githubusercontent.com/VENHABRABO/SSHPLUS-NEW/main/Slowdns/install -o /dev/null
+			wget https://raw.githubusercontent.com/ASFX9DEV/SSHPLUS-NEW/main/Slowdns/install -o /dev/null
 			chmod 777 install
 			./install
 		}
@@ -465,7 +465,7 @@ echo -e "\033[0;34m┏━━━━━━━━━━━━━━━━━━━�
 	fun_v2rayins() {
 		clear
 		v2rayinst() {
-			source <(curl -sL https://raw.githubusercontent.com/VENHABRABO/SSHPLUS-NEW/main/Modulos/v2ray)
+			source <(curl -sL https://raw.githubusercontent.com/ASFX9DEV/SSHPLUS-NEW/main/Modulos/v2ray)
 			sleep 6
 		}
 		if netstat -tunlp | grep v2ray 1>/dev/null 2>/dev/null; then
@@ -762,7 +762,7 @@ clear
 					#cat cert.pem key.pem >>/etc/stunnel/stunnel.pem
 					#rm key.pem cert.pem >/dev/null 2>&1
 					sed -i 's/ENABLED=0/ENABLED=1/g' /etc/default/stunnel4
-					cd /etc/stunnel && wget https://raw.githubusercontent.com/VENHABRABO/SSHPLUS-NEW/mains/Install/stunnel.pem && cd $HOME
+					cd /etc/stunnel && wget https://raw.githubusercontent.com/ASFX9DEV/SSHPLUS-NEW/mains/Install/stunnel.pem && cd $HOME
 				}
 				fun_bar 'ssl_certif'
 				echo -e "\n\033[1;32mINICIANDO O SSL TUNNEL !\033[0m"
@@ -1255,9 +1255,9 @@ echo -e "\033[0;34m┏━━━━━━━━━━━━━━━━━━━�
 			# Adquirindo easy-rsa
 			echo ""
 			fun_dep() {
-				wget -O ~/EasyRSA-v3.0.9.tgz "https://github.com/VENHABRABO/SSHPLUS-NEW/main/Install/EasyRSA-v3.0.9.tgz"
+				wget -O ~/EasyRSA-v3.0.9.tgz "https://github.com/ASFX9DEV/SSHPLUS-NEW/main/Install/EasyRSA-v3.0.9.tgz"
 				[[ ! -e $HOME/EasyRSA-v3.0.9.tgz ]] && {
-					wget -O ~/EasyRSA-v3.0.9.tgz "https://github.com/VENHABRABO/SSHPLUS-NEW/main/Install/EasyRSA-v3.0.9.tgz"
+					wget -O ~/EasyRSA-v3.0.9.tgz "https://github.com/ASFX9DEV/SSHPLUS-NEW/main/Install/EasyRSA-v3.0.9.tgz"
 				}
 				tar xzf ~/EasyRSA-v3.0.9.tgz -C ~/
 				mv ~/EasyRSA-v3.0.9/ /etc/openvpn/
